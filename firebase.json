@@ -1,13 +1,14 @@
 {
-  "firebase": "funapp",
-  "public": "dist",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ],
-  "rewrites": [ {
-    "source": "!(**/*.js|**/*.css)",
-    "destination": "/index.html"
-  } ]
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "!(**/*.js|**/*.css)",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
