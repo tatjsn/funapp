@@ -1,0 +1,12 @@
+{
+  "short_name": "Fun App",
+  "name": "Fun App for Everyone",
+  "icons": [
+    {
+      "src": "launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": "index.html?launcher=true"
+}
