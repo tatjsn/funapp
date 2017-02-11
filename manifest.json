@@ -8,5 +8,6 @@
       "sizes": "96x96"
     }
   ],
+  "background_color": "#2196F3",
   "start_url": "index.html?launcher=true"
 }
