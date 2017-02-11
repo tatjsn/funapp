@@ -1,3 +1,10 @@
 machine:
   node:
     version: 6.9.1
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - npm run dist
+      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
