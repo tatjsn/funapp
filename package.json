@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint .",
-    "dist": "mkdir -p dist && cp index.html manifest.json img/* dist",
+    "dist": "mkdir -p dist && cp index.html manifest.json *.js img/*.png dist",
     "serve": "firebase serve"
   },
   "keywords": [],
