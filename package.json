@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint .",
-    "webpack": "webpack src/main.js dist/main.js",
+    "webpack-dev": "webpack src/main.js dist/main.js",
+    "webpack": "webpack -p src/main.js dist/main.js",
+    "dev": "mkdir -p dist && npm run webpack-dev && cp index.html manifest.json src/sw.js img/*.png dist",
     "dist": "mkdir -p dist && npm run webpack && cp index.html manifest.json src/sw.js img/*.png dist",
     "serve": "firebase serve"
   },
