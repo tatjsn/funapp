@@ -6,7 +6,7 @@
     "public": "dist",
     "rewrites": [
       {
-        "source": "!(**/*.js|**/*.css|**/*.png|**/*.json)",
+        "source": "!(**/*.@(js|css|png|json)",
         "destination": "/index.html"
       }
     ]
