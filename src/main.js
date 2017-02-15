@@ -1,4 +1,5 @@
 /* global document, navigator */
+/* eslint-disable no-console, jsx-a11y/anchor-has-content */
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 import React from 'react';
