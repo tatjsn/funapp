@@ -5,8 +5,8 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
         '/',
         '/main.js',
-        '/osake_woman1_smile.png',
-        '/osake_woman4_laugh.png',
+        '/main.js',
+        '//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
       ])
   ));
 });
