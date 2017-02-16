@@ -7,4 +7,4 @@ deployment:
     branch: master
     commands:
       - npm run dist
-      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+      - firebase deploy --project=$FIREBASE_PROJECT --token=$FIREBASE_TOKEN --non-interactive
