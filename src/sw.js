@@ -1,7 +1,7 @@
 /* global self, caches, fetch */
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('cache-v1')
+    caches.open('cache-%%hash%%')
       .then(cache => cache.addAll([
         '/',
         '/main.js',

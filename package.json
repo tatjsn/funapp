@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint .",
-    "webpack-dev": "webpack src/main.js dist/main.js",
-    "webpack": "webpack -p src/main.js dist/main.js",
-    "dev": "mkdir -p dist && npm run webpack-dev && cp index.html manifest.json src/sw.js img/*.png dist",
-    "dist": "mkdir -p dist && npm run webpack && cp index.html manifest.json src/sw.js img/*.png dist",
+    "main-dev": "webpack src/main.js dist/main.js",
+    "main": "webpack -p src/main.js dist/main.js",
+    "sw": "cat src/sw.js | sed -e \"s/%%hash%%/$(git rev-parse --short=7 HEAD)/\" > dist/sw.js",
+    "dev": "mkdir -p dist && npm run main-dev && cp index.html manifest.json src/sw.js img/*.png dist",
+    "dist": "mkdir -p dist && npm run main && npm run sw && cp index.html manifest.json img/*.png dist",
     "serve": "firebase serve"
   },
   "keywords": [],
