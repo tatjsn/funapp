@@ -9,17 +9,17 @@
         "source": "!(**/*.@(js|css|png|json)",
         "destination": "/index.html"
       }
+    ],
+    "headers": [
+      {
+        "source" : "/sw.js",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "60"
+          }
+        ]
+      }
     ]
-  },
-  "headers": [
-    {
-      "source" : "/sw.js",
-      "headers" : [
-        {
-          "key" : "Cache-Control",
-          "value" : "60"
-        }
-      ]
-    }
-  ]
+  }
 }
