@@ -5,7 +5,6 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
         '/',
         '/main.js',
-        '/main.js',
         '//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
       ])
   ));
