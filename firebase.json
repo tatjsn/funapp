@@ -16,7 +16,7 @@
         "headers" : [
           {
             "key" : "Cache-Control",
-            "value" : "60"
+            "value" : "max-age=0"
           }
         ]
       }
